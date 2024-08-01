@@ -1,0 +1,201 @@
+:root {
+    --main-color: #f5d04e;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+    background-color: var(--main-color);
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.componant {
+    width: 30%;
+    height: 85vh;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+    position: relative;
+    border: 2px solid;
+    border-radius: 5%;
+    z-index: 1;
+}
+.componant-border {
+    width: calc(30% + 5px);
+    height: 85vh;
+    position: absolute;
+    background-color: black;
+    border-radius: 5%;
+    top: 65px;
+    right: 525px;
+}
+
+.componant .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    top: 5%;
+}
+
+.componant .main-img {
+    width: 95%;
+    border-radius: 5%;
+}
+
+.componant .tag {
+    background: var(--main-color);
+    width: fit-content;
+    padding: 2%;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.componant .Published-date {
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.componant h2 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+
+.componant .discreption {
+    width: 90%;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #606060;
+}
+
+.componant .footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 3%;
+    width: 90%;
+}
+
+.componant .footer span img {
+    width: 35px;
+}
+
+.componant .footer .name {
+    padding-left: 3%;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+
+@media(max-width:768px) {
+
+    .container {
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .componant {
+        width: 80%;
+        height: 85vh;
+        background: white;
+        padding: 5%;
+        position: absolute;
+        right: 75px;
+        top: 10%;
+        border-radius: 5%;
+        border: solid 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .componant .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .componant .main-img {
+        width: 100%;
+        border-radius: 5%;
+    }
+
+    .componant .tag {
+        font-size: x-large;
+        font-weight: bold;
+        background: var(--main-color);
+        width: 150px;
+        height: 45px;
+        padding-top: 10px;
+        text-align: center;
+        margin-top: 5%;
+        border-radius: 5%;
+    }
+
+    .componant .Published-date {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .componant h2 {
+        margin-top: 5%;
+        font-size: xx-large;
+        font-weight: 900;
+        margin-bottom: 5%;
+    }
+
+    .componant .discreption {
+        font-size: 27px;
+        width: 100%;
+        font-weight: 100;
+    }
+
+    .componant .footer {
+        display: flex;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .componant .footer .name {
+        font-size: 25px;
+        font-weight: 900;
+        padding-left: 25px;
+    }
+}
